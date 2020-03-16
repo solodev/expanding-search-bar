@@ -1,0 +1,190 @@
+.header {
+    margin-bottom: 0;
+    z-index: 3;
+  }
+  
+  .header--logo {
+    padding-top: 18px;
+  }
+  
+  .header .header--menubar {
+    position: relative;
+  }
+  
+  .header .header--menubar .header--menu ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 34px;
+    list-style: none;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .header .header--menubar .header--menu ul li {
+    display: inline-block;
+    margin-right: 32px;
+    padding-bottom: 32px;
+    border-bottom: 9px solid transparent;
+  }
+  
+  @media (max-width: 1469px) and (min-width: 1200px) {
+    .header .header--menubar .header--menu ul li {
+      margin-right: 27px;
+    }
+  }
+  
+  .header .header--menubar .header--menu__top ul li {
+    position: relative;
+    line-height: 16px;
+    margin-right: 0;
+    padding-left: 18px;
+    padding-right: 17px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  
+  .header .header--menubar .header--menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header .header--menubar .header--menu ul li a {
+    color: #010101;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .header--menu__bottom {
+      text-transform: uppercase;
+  }
+  
+  .header .header--menubar .header--menu__top ul li a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .header .header--menubar .header--menu ul li.btn {
+      padding: 0;
+  }
+  
+  .header .header--menubar .header--menu ul li.btn a {
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5.5rem;
+    padding: 0.5rem 1.5rem;
+    border-width: 2px;
+    font-size: 0.9375rem;
+    color: #fff;
+    background-color: #d60e96;
+    border-color: #d60e96;
+  }
+  
+  .menu-hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+  }
+
+  .header--search i {
+      font-size: 1.7rem;
+      cursor: pointer;
+      margin-right: 20px;
+  }
+  
+  .header .header--menubar .header--menu__top ul {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .header .header--menubar .header--menu__top ul li::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 100%;
+  }
+  
+  .header .header--menubar .header--menu__top ul li:first-child::before {
+    display: none;
+  }
+  
+  .header .header--menubar .header--menu__top ul li:last-child {
+    padding-right: 0;
+  }
+  
+  .header .header--menubar .header--menu__top ul li i {
+    font-size: 14px;
+  }
+  
+  .header--search_open {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 130px;
+    height: 130px;
+    display: none;
+  }
+  
+  .header--search_open.open {
+    display: block;
+  }
+  
+  .header--search_open form {
+    position: relative;
+  }
+  
+  .header--search_open form span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: calc(42% - 10px);
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    font-size: 2rem;
+  }
+  
+  .header--search_open input {
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    font-size: 27px;
+    padding: 5px 5px 5px 47px;
+    color: #495057;
+    position: relative;
+    margin-top: 35px;
+    border-radius: 0;
+  }
+  
+  .header--search_open input::-webkit-input-placeholder,
+  .header--search_open input::-moz-placeholder,
+  .header--search_open input:-ms-input-placeholder {
+    color: #495057;
+    opacity: 1;
+  }
+  
+  .header--search_open button {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    color: #fff;
+    background: #d60e96;
+    font-size: 27px;
+    height: 65px;
+    line-height: 65px;
+    width: 68px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+  
+  .header--search_open button:hover {
+    background: #b20c7d;
+    color: #fff;
+    cursor: pointer;
+  }
